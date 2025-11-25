@@ -24,5 +24,10 @@ import userRouter from './routes/auth.routes.js'
 app.use("/api/v1/users",userRouter);
 // app.use("/api/v1/auth", userRouter);
 
+import postRoutes from "./routes/post.routes.js";
+
+app.use("/api/v1/posts", postRoutes);
+
+
 
 export { app }
